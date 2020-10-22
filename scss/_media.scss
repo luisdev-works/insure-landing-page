@@ -1,0 +1,272 @@
+//Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	.main {
+		&__intro {
+			display: flex;
+			align-items: center;
+			flex-direction: row-reverse;
+			justify-content: flex-end;
+		}
+		&__content {
+			text-align: left;
+			max-width: 50%;
+		}
+		&__img {
+			&--mobile {
+				position: absolute;
+				right: 0;
+				margin: 5rem 2.4rem;
+				max-width: 45%;
+			}
+		}
+	}
+}
+
+//Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.header {
+		&__dropdown {
+			&-btn {
+				display: none;
+			}
+			&-menu {
+				display: none;
+			}
+		}
+		&__nav {
+			&-items {
+				display: flex;
+				align-items: center;
+			}
+			&-item {
+				text-transform: uppercase;
+				font-size: 1.3rem;
+				letter-spacing: 1.5px;
+				cursor: pointer;
+				color: var(--dark-grayish-violet);
+				transition: all 0.3s ease;
+				&:not(:last-child) {
+					margin-right: 2.5rem;
+					&:hover {
+						color: var(--very-dark-violet);
+					}
+				}
+			}
+		}
+	}
+	header nav .header__nav-items {
+		display: flex;
+	}
+	#view_plans {
+		color: var(--very-dark-violet);
+		padding: 1.3rem 2rem;
+		border: 1px solid var(--very-dark-violet);
+		&:hover {
+			color: #fff;
+			background-color: var(--very-dark-violet);
+		}
+	}
+
+	.main {
+		&__img {
+			&--mobile {
+				max-width: 100%;
+			}
+		}
+		&__card {
+			padding: 0 2rem;
+			&:not(:last-child) {
+				margin-bottom: 0;
+			}
+		}
+		&__cards {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
+	.footer {
+		&__nav {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+}
+
+//Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+	.container {
+		padding: 0 10rem;
+	}
+	.main {
+		&__img {
+			&--mobile {
+				position: absolute;
+				right: 0;
+				margin: 5rem 10rem;
+				max-width: 45%;
+			}
+		}
+		&__content {
+			max-width: 60%;
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	body {
+		text-align: left;
+	}
+	.container {
+		max-width: 1440px;
+		padding: 0 16.5rem;
+		margin: 0 auto;
+	}
+	//nav bar
+	#view_plans {
+		padding: 1.3rem 2.85rem;
+	}
+	.main {
+		&__intro {
+			display: block;
+		}
+		&__content {
+			text-align: left;
+			max-width: 100%;
+		}
+	}
+
+	// intro section
+	.main {
+		&__text-wrap {
+			width: 49%;
+		}
+		&__intro &__content {
+			background-image: none;
+			padding-top: 10.5rem;
+			display: flex;
+			.container {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+		&__intro {
+			max-height: 600px;
+			h1 {
+				font-size: 7.2rem;
+				line-height: 0.88;
+				letter-spacing: -1px;
+			}
+			h2 {
+				margin-bottom: 2.4rem;
+			}
+		}
+		&__img {
+			&--mobile {
+				display: none;
+			}
+			&--desktop {
+				display: flex;
+				position: absolute;
+				right: 0;
+				overflow-y: hidden;
+				img {
+					transform: translateY(-80px);
+				}
+			}
+		}
+		&__hero {
+			&--desktop {
+				display: flex;
+			}
+		}
+	}
+	.white-bar {
+		display: block;
+		height: 1px;
+		max-width: 150px;
+		background-color: #fff;
+		margin-bottom: 6.3rem;
+	}
+	.intro-hero-desktop {
+		display: flex;
+	}
+	#side-pattern-mobile {
+		display: none;
+	}
+	#side-pattern-desktop {
+		display: flex;
+		position: absolute;
+		left: 0;
+		transform: translateY(-34%);
+	}
+
+	// features section
+	.main {
+		&__features {
+			margin-top: 30.5rem;
+			margin-bottom: 15.8rem;
+			.line {
+				margin: unset;
+				margin-bottom: 6.3rem;
+			}
+			h3 {
+				font-size: 7.2rem;
+			}
+		}
+		&__cards {
+			flex-direction: row;
+			margin-top: 9.6rem;
+		}
+		&__card {
+			&:not(:last-child) {
+				margin-left: 3rem;
+			}
+		}
+	}
+
+	// cta section
+	.cta {
+		margin-bottom: 15rem;
+		&__content {
+			align-items: center;
+			background-image: url(/images/bg-pattern-how-we-work-desktop.svg);
+			background-position: right center;
+			display: flex;
+			justify-content: space-between;
+			padding: 6.8rem 8.1rem;
+			h4 {
+				margin-bottom: 0;
+				font-size: 5.6rem;
+				padding: 0;
+				letter-spacing: -0.78px;
+			}
+		}
+	}
+
+	//footer section
+	footer {
+		background-image: url(/images/bg-pattern-footer-desktop.svg);
+		padding-top: 6.7rem;
+	}
+	.footer {
+		&__socials {
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 3.6rem;
+		}
+		&__nav {
+			flex-direction: row;
+			margin-top: 4.8rem;
+			&-card {
+				min-width: 255px;
+				&:not(:last-child) {
+					margin-bottom: 0;
+					margin-right: 3rem;
+					margin-bottom: 6.4rem;
+				}
+			}
+		}
+	}
+}
